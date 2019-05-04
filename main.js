@@ -9,7 +9,7 @@ function createWindow () {
     width: 600,
     height: 600,
     backgroundColor: '#ffffff',
-    icon: `file://${__dirname}/dist/listen-for-apple-music/assets/logo.png`
+    icon: `file://${__dirname}/dist/lstna/assets/logo.png`
   });
 
   if (process.env.NODE_ENV !== 'prod') {
@@ -17,7 +17,7 @@ function createWindow () {
   }
 
 
-  win.loadURL(`file://${__dirname}/dist/listen-for-apple-music/index.html`);
+  win.loadURL(`file://${__dirname}/dist/lstna/index.html`);
 
   // Event when the window is closed.
   win.on('closed', () => {

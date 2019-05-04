@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "listen-for-apple-music": {
+    "lstna": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/listen-for-apple-music",
+            "outputPath": "dist/lstna",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "listen-for-apple-music:build"
+            "browserTarget": "lstna:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "listen-for-apple-music:build:production"
+              "browserTarget": "lstna:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "listen-for-apple-music:build"
+            "browserTarget": "lstna:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "listen-for-apple-music-e2e": {
+    "lstna-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "listen-for-apple-music:serve"
+            "devServerTarget": "lstna:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "listen-for-apple-music:serve:production"
+              "devServerTarget": "lstna:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "listen-for-apple-music"
+  "defaultProject": "lstna"
 }

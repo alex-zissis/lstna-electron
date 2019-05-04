@@ -1,5 +1,6 @@
 {
-  "name": "listen-for-apple-music",
+  "name": "lstna",
+  "description": "lstna for Apple Music - a cross platform desktop Apple Music player",
   "version": "0.0.0",
   "main": "main.js",
   "scripts": {
